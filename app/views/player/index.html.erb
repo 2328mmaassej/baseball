@@ -1,0 +1,24 @@
+<h1> Baseball Statistics 1998 </h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>AVG</th>
+    <th>Home Runs</th>
+    <th>RBI</th>
+    <th>Runs</th>
+    <th>Steals</th>
+  </tr>
+
+  <% @players.each do |player| %>
+    <tr>
+      <td><%= player.first_name %> <%= player.last_name %></td>
+      <td><%= player.hits %></td>
+      <td><%= player.home_runs %></td>
+      <td><%= player.rbi %></td>
+      <td><%= player.runs %></td>
+      <td><%= player.steals %></td>
+    </tr>
+  <% end %>
+</table>
+
